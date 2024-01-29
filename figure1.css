@@ -1,0 +1,48 @@
+@media screen and (min-width:900px) {
+
+    html {
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        margin: 0;
+        display: flex;
+        flex: 1;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 335px;
+    }
+
+    main {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .mid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .storyfeed {
+        display: flex;
+        width: 630px;
+        height: 101px;
+    }
+
+    .recommandbar {
+        width: 335px;
+    }
+}
