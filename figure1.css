@@ -17,13 +17,52 @@
         display: none;
     }
 
+    /* navbar 부분 시작 */
     .navbar {
         display: flex;
         flex-direction: column;
-        height: 100%;
         width: 335px;
+
+
+        /* 지워야할 코드 */
+        border: 2px solid black;
     }
 
+    .navbar_logo {
+        height: 73px;
+        line-height: 73px;
+    }
+
+    .navbar_contents {
+        height: 100%;
+    }
+
+
+    .navbar-contents-item {
+        height: 48px;
+
+        /* 지워야할 코드 */
+        /* border: 2px solid black; */
+    }
+
+    .navbar_bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom_seemore,
+    .bottom_threads {
+        height: 48px;
+        /*지워야할 코드 */
+        border: 1px solid red;
+    }
+
+
+
+
+
+
+    /* main 부분 시작 */
     main {
         display: flex;
         flex: 1;
