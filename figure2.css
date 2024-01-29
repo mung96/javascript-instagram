@@ -8,7 +8,7 @@
 } */
 
 
-@media screen and (min-width:1264px) {
+
 
     html {
         height: 100%;
@@ -32,17 +32,19 @@
     .navbar {
         display: flex;
         flex-direction: column;
-        width: 240px;
+        min-width: 80px;
         border-right: 1px solid gray;
         align-items: center;
+
     }
 
     .navbar_top {
-        height: 73px;
+        
+        height: 48px;
         line-height: 73px;
-        margin-top: 30px;
-        font-size:30px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin: 30px 30px;
+        
+        content: url(/img/icon_Insta.png);
     }
 
     .navbar_contents {
@@ -52,12 +54,13 @@
 
     .navbar_contents_item {
         height: 48px;
-        margin: 10px 10px 10px 0px;
+        margin: 10px 10px 10px 10px;
         display: flex;
-        align-items: center;
+        align-items:center;
     }
     .navbar_contents_item_text{
         margin-left: 20px;
+        display: none;
     }
   
 
@@ -69,9 +72,12 @@
 
     }
     .navbar_bottom_item{
-        margin: 10px 10px 10px 0px;
+        margin: 10px 10px 10px 10px;
         display: flex;
         align-items: center;
+    }
+    .navbar_bottom_item_text{
+        display: none;
     }
 
     .bottom_seemore,
@@ -101,7 +107,7 @@
     .storyfeed {
         display: flex;
         gap: 12px;
-        margin-top: 30px;
+        margin: 30px 0px 0px 30px;
         height: 101px;
     }
 
@@ -201,9 +207,9 @@
 
     /*추천영역 시작 */
     .recommandbar {
+        display: none;
         margin-top: 30px;
         width: 335px;
 
 
     }
-}
