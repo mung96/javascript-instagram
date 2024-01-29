@@ -22,10 +22,7 @@
         display: flex;
         flex-direction: column;
         width: 335px;
-
-
-        /* 지워야할 코드 */
-        border: 2px solid black;
+        border-right: 1px solid gray;
     }
 
     .navbar_logo {
@@ -41,8 +38,6 @@
     .navbar-contents-item {
         height: 48px;
 
-        /* 지워야할 코드 */
-        /* border: 2px solid black; */
     }
 
     .navbar_bottom {
@@ -53,8 +48,6 @@
     .bottom_seemore,
     .bottom_threads {
         height: 48px;
-        /*지워야할 코드 */
-        border: 1px solid red;
     }
 
 
@@ -73,15 +66,43 @@
     .mid {
         display: flex;
         flex-direction: column;
+        width: 630px;
     }
 
     .storyfeed {
         display: flex;
-        width: 630px;
+        gap: 12px;
+
         height: 101px;
     }
 
+    .storyfeed_item {
+        display: flex;
+        flex-direction: column;
+        width: 66px;
+    }
+
+    .storyfeed_item_profile {
+        height: 66px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid black;
+
+    }
+
+    .storyfeed_item_profile>img {
+        height: 66px;
+    }
+
+    .storyfeed_item_nickname {
+        text-align: center;
+        margin-top: 2px;
+    }
+
+
     .recommandbar {
         width: 335px;
+
+
     }
 }
