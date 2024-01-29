@@ -1,4 +1,14 @@
-@media screen and (min-width:900px) {
+/* @media screen and (min-width:1920px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 335px;
+        border-right: 1px solid gray;
+    }
+} */
+
+
+@media screen and (min-width:1264px) {
 
     html {
         height: 100%;
@@ -21,7 +31,7 @@
     .navbar {
         display: flex;
         flex-direction: column;
-        width: 335px;
+        width: 240px;
         border-right: 1px solid gray;
     }
 
