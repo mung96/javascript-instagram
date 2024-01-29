@@ -25,7 +25,7 @@
         border-right: 1px solid gray;
     }
 
-    .navbar_logo {
+    .navbar_top {
         height: 73px;
         line-height: 73px;
     }
@@ -35,7 +35,7 @@
     }
 
 
-    .navbar-contents-item {
+    .navbar_contents_item {
         height: 48px;
 
     }
@@ -53,8 +53,6 @@
 
 
 
-
-
     /* main 부분 시작 */
     main {
         display: flex;
@@ -68,11 +66,9 @@
         flex-direction: column;
         width: 630px;
 
-        /* 지워야할 부분 */
-        border: 2px blue solid;
     }
 
-    /* 인스타 스토리 부분 시작 */
+    /* 인스타 스토리(storyfeed) 부분 시작 */
     .storyfeed {
         display: flex;
         gap: 12px;
@@ -105,8 +101,7 @@
 
 
 
-
-    /* 인스타 게시글 부분 시작 */
+    /* 인스타 게시글(postcard) 부분 시작 */
     .postcards {
         display: flex;
         flex-direction: column;
@@ -116,14 +111,12 @@
     .postcard {
         width: 470px;
         height: 693px;
-
-        /* 지워야할 부분 */
-        border: 2px red solid;
+        border-bottom: 1px solid gray;
     }
 
 
 
-    /* 게시글 윗 부분 */
+    /* 게시글(postcard) 윗 부분 */
     .postcard_top {
         display: flex;
         align-items: center;
@@ -146,7 +139,8 @@
         margin-left: 5px;
     }
 
-    /* 게시글 사진 부분 */
+
+    /* 게시글(postcard) 사진 부분 */
     .postcard_content {
         height: 468px;
     }
@@ -157,7 +151,7 @@
 
 
 
-    /* 게시글 아래 부분 */
+    /* 게시글(postcard) 아래 부분 */
     .postcard_bottom_icons {
         display: flex;
         justify-content: space-between;
