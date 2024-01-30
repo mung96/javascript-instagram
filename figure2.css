@@ -213,7 +213,7 @@
 }
 .postcard_slide {
     height: 468px;
-    flex-flow: row nowrap;
+    position: relative;
     display: flex;
     flex-shrink: 0;
 }
