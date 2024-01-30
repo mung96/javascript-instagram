@@ -30,6 +30,9 @@
 
     /* navbar 부분 시작 */
     .navbar {
+        position: fixed;
+        z-index: 1;
+        height: 100%;
         display: flex;
         flex-direction: column;
         min-width: 80px;
@@ -91,6 +94,7 @@
     /* main 부분 시작 */
     main {
         display: flex;
+        padding-left: 100px;
         flex: 1;
         flex-direction: row;
         justify-content: center;
@@ -201,15 +205,64 @@
 
 /* 게시글(postcard) 사진 부분 */
 .postcard_content {
+    position: relative;
     height: 468px;
     border: 1px solid gray;
     border-radius: 5px;
     overflow: hidden;
 }
-
-.postcard_content>img {
-    width: 100%;
-
+.postcard_slide {
+    height: 468px;
+    flex-flow: row nowrap;
+    display: flex;
+    flex-shrink: 0;
+}
+.postcard_slide>img {
+    min-width: 550px;
+    
+}
+/* 버튼*/
+.btn-next,
+.btn-next:active,
+.btn-next:focus {
+  position: absolute;
+  padding: 2px 8px 7px 10px;
+  background-color: #FFDC80;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 100%;
+}
+.btn-prev,
+.btn-prev:active,
+.btn-prev:focus {
+  position: absolute;
+  padding: 2px 10px 7px 8px;
+  background-color: #FFDC80;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 100%;
+  text-align: center;
+}
+.btn-next:disabled,
+.btn-prev:disabled {
+  background-color: lightgray;
+}
+.btn-next:hover,
+.btn-prev:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #FFDC80;
+  transition: 0.7s ease-out;
+}
+.btn-prev {
+  left: 18px;
+  top: 50%;
+}
+.btn-next {
+  right: 18px;
+  top: 50%;
 }
 /* 게시글(postcard) 아래 부분 */
 
