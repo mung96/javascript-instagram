@@ -15,7 +15,7 @@
     }
     
     /* figure 3-1. header 부분 시작 */
-    @media screen and (max-width: 700px){
+    @media screen and (min-width: 400px) and (max-width: 800px){
         .header{
             display: block;
         }
@@ -33,14 +33,20 @@
         padding-top : 10px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .header_left_title{
         float: left;
+        position: fixed;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 50px;
     }
 
     .header_right{
+        float: right;
         display: flex;
+        margin-right: 50px;
     }
 
     .header_right_search_text{
@@ -49,6 +55,7 @@
         bottom: 50%;
         left : 10%;
         border-width: 0;
+        width: 120px;
         height: 5%;
         text-align: left;
         background-color: lightgrey;
@@ -230,9 +237,35 @@
     }
 
 
-    @media screen and (max-width: 700px){
-        .footer{
+    @media screen and (min-width: 400px) and (max-width: 800px){
+        /* .footer{
             display: block;
+        } */
+        /* figure 3-2. 하단 footer(navbar) 부분 시작 */
+        .footer{
+            display: flex;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding-top : 10px;
+            min-width: 80px;
+            justify-content: space-between;
+        }
+
+        .footer_contents {
+            width: 100%;
+            border-width: 0;
+            color: transparent;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .footer_contents_item {
+            height: 48px;
+            margin: 20px 20px 20px 20px;
+            align-items:center;
         }
 
         .navbar{
@@ -240,33 +273,15 @@
         }
 
         .mid{
-            padding-bottom: 80px;            
+            padding-bottom: 10px;            
         }
+
     }
 
-    /* figure 3-2. 하단 footer(navbar) 부분 시작 */
-    .footer{
-        display: flex;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        padding-top : 10px;
-        min-width: 80px;
-        border-right: 1px solid gray;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .footer_contents {
-        width: 100%;
-        display: flex;
-    }
-
-
-    .footer_contents_item {
-        height: 48px;
-        margin: 20px 20px 20px 20px;
-        align-items:center;
+    @media screen and (min-width:800px){
+        .footer{
+            display: None; /* 이거 왜 800px 넘어가도 안없어질까ㅠㅠㅠ*/
+        }
     }
 
     /*추천영역 시작 */
