@@ -10,124 +10,126 @@
 
 
 
-    html {
-        height: 100%;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-    }
+html {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
 
-    body {
-        margin: 0;
-        display: flex;
-        flex: 1;
-        font-family:'Pretendard-Regular';
-    }
+body {
+    margin: 0;
+    display: flex;
+    flex: 1;
+    font-family: 'Pretendard-Regular';
+}
 
-    .header {
-        display: none;
-    }
+.header {
+    display: none;
+}
 
-    /* navbar 부분 시작 */
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        width: 240px;
-        border-right: 1px solid gray;
-        align-items: center;
-    }
+/* navbar 부분 시작 */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    border-right: 1px solid gray;
+    align-items: center;
+}
 
-    .navbar_top {
-        height: 73px;
-        line-height: 73px;
-        margin-top: 30px;
-        font-size:30px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
+.navbar_top {
+    height: 73px;
+    line-height: 73px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
-    .navbar_contents {
-        height: 100%;
-    }
-
-
-    .navbar_contents_item {
-        height: 48px;
-        margin: 10px 10px 10px 0px;
-        display: flex;
-        align-items: center;
-    }
-    .navbar_contents_item_text{
-        margin-left: 20px;
-    }
-  
-
-    .navbar_bottom {
-        margin-bottom: 30px;
-        display: flex;
-        flex-direction: column;
-      
-
-    }
-    .navbar_bottom_item{
-        margin: 10px 10px 10px 0px;
-        display: flex;
-        align-items: center;
-    }
-
-    .bottom_seemore,
-    .bottom_threads {
-        height: 48px;
-    }
+.navbar_contents {
+    height: 100%;
+}
 
 
+.navbar_contents_item {
+    height: 48px;
+    margin: 10px 10px 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar_contents_item_text {
+    margin-left: 20px;
+}
 
 
-    /* main 부분 시작 */
-    main {
-        display: flex;
-        flex: 1;
-        flex-direction: row;
-        justify-content: center;
-    }
+.navbar_bottom {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
 
-    .mid {
-        display: flex;
-        flex-direction: column;
-        width: 630px;
 
-    }
+}
 
-    /* 인스타 스토리(storyfeed) 부분 시작 */
-    .storyfeed {
-        display: flex;
-        gap: 12px;
-        margin-top: 30px;
-        height: 101px;
-    }
+.navbar_bottom_item {
+    margin: 10px 10px 10px 0px;
+    display: flex;
+    align-items: center;
+}
 
-    .storyfeed_item {
-        display: flex;
-        flex-direction: column;
-        width: 66px;
-    }
+.bottom_seemore,
+.bottom_threads {
+    height: 48px;
+}
 
-    .storyfeed_item_profile {
-        height: 66px;
-        border-radius: 50%;
-        overflow: hidden;
-        border: 1px solid black;
-    }
 
-    .storyfeed_item_profile>img {
-        height: 66px;
-        margin: auto;
-        display: block;
-    }
 
-    .storyfeed_item_nickname {
-        text-align: center;
-        margin-top: 2px;
-    }
+
+/* main 부분 시작 */
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    width: 630px;
+
+}
+
+/* 인스타 스토리(storyfeed) 부분 시작 */
+.storyfeed {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+    height: 101px;
+}
+
+.storyfeed_item {
+    display: flex;
+    flex-direction: column;
+    width: 66px;
+}
+
+.storyfeed_item_profile {
+    height: 66px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.storyfeed_item_profile>img {
+    height: 66px;
+    margin: auto;
+    display: block;
+}
+
+.storyfeed_item_nickname {
+    text-align: center;
+    margin-top: 2px;
+}
 
 
 
@@ -190,20 +192,76 @@
 }
 
 
+
 /* 게시글(postcard) 사진 부분 */
 .postcard_content {
+    position: relative;
     height: 468px;
     border: 1px solid gray;
     border-radius: 5px;
     overflow: hidden;
 }
 
-.postcard_content>img {
-    width: 100%;
+.postcard_slide {
+    height: 468px;
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.postcard_slide>img {
+    min-width: 550px;
 
 }
 
+/* 버튼*/
+.btn-next,
+.btn-next:active,
+.btn-next:focus {
+    position: absolute;
+    padding: 2px 8px 7px 10px;
+    background-color: #FFDC80;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 100%;
+}
 
+.btn-prev,
+.btn-prev:active,
+.btn-prev:focus {
+    position: absolute;
+    padding: 2px 10px 7px 8px;
+    background-color: #FFDC80;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.btn-next:disabled,
+.btn-prev:disabled {
+    background-color: lightgray;
+}
+
+.btn-next:hover,
+.btn-prev:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #FFDC80;
+    transition: 0.7s ease-out;
+}
+
+.btn-prev {
+    left: 18px;
+    top: 50%;
+}
+
+.btn-next {
+    right: 18px;
+    top: 50%;
+}
 
 /* 게시글(postcard) 아래 부분 */
 
@@ -272,10 +330,10 @@
 
 
 
-    /*추천영역 시작 */
-    .recommandbar {
-        margin-top: 30px;
-        width: 335px;
+/*추천영역 시작 */
+.recommandbar {
+    margin-top: 30px;
+    width: 335px;
 
 
-    }
+}
