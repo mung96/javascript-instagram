@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>인스타그램</title>
+
+    <link rel="stylesheet" href="fonts.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+
     <link rel="stylesheet" href="figure1.css" media="screen and (min-width:1264px)" />
     <link rel="stylesheet" href="figure2.css" media="screen and (min-width:512px) and (max-width:1264px)" />
     <link rel="stylesheet" href="figure3.css" media="screen and (min-width:300px) and (max-width:700px)" />
 
-    <link rel="stylesheet" href="fonts.css"/>
+
 </head>
 
 <body>
@@ -18,7 +22,7 @@
         <div class="navbar_top">
             Instagram
         </div>
-        
+
 
         <div class="navbar_contents">
             <div class="navbar_contents_item">
@@ -76,7 +80,7 @@
             <div class="header_left_title">
                 Instagram
             </div>
-             <!--2. 검색바 & 오른쪽 하트 아이콘 -->
+            <!--2. 검색바 & 오른쪽 하트 아이콘 -->
             <div class="header_right">
                 <div class="header_right_search_icon">
                     <img src="img/icon_Search.svg">
@@ -119,18 +123,22 @@
 
                     <!-- 게시글 윗 부분 -->
                     <div class="postcard_top">
-                        <div class="postcard_top_profile">
-                            <img src="profile.svg">
+                        <div class="postcard_top_right">
+                            <div class="postcard_top_profile">
+                                <img src="img/img_Profile2.jpg">
+                            </div>
+                            <span class=" postcard_top_nickname"> {bonoBono}</span>
+                            <div class="postcard_top_timelog">1일</div>
                         </div>
-                        <span class="postcard_top_nickname"> 닉네임</span>
-                        <div class="postcard_top_timelog">1일</div>
-                        <div class="postcard_top_seemore"><img src="img/icon_More.svg"></div>
+                        <div class="postcard_top_right">
+                            <div class="postcard_top_seemore"><img src="img/icon_More.svg"></div>
+                        </div>
                     </div>
 
 
                     <!-- 게시글 사진 부분 -->
                     <div class="postcard_content">
-                        <img src="home.svg" />
+                        <img src="img/img_Profile2.jpg" />
                     </div>
 
 
@@ -139,59 +147,202 @@
 
                         <div class="postcard_bottom_icons">
                             <div class="postcard_bottom_icons_left">
-                                <img src="img/icon_Heart.svg">
-                                <img src="img/icon_Heart.svg">
-                                <img src="img/icon_Heart.svg">
+                                <div class="postcard_bottom_icons_left_box">
+                                    <img src="img/icon_Heart.svg">
+                                </div>
+                                <div class="postcard_bottom_icons_left_box">
+                                    <img src="img/icon_Comment.svg">
+                                </div>
+                                <div class="postcard_bottom_icons_left_box">
+                                    <img src="img/icon_Send.svg">
+                                </div>
                             </div>
                             <div class="postcard_bottom_icons_right">
-                                <img src="img/icon_Heart.svg">
+                                <img src="img/icon_Bookmark.svg">
                             </div>
                         </div>
 
                         <div class="postcard_bottom_favorite-count">좋아요 66개</div>
 
                         <div class="postcard_bottom_writing">
-                            <div class="postcard_bottom_writing_nickname"> 닉네임</div>
-                            <span class="postcard_bottom_writing_content">글</span>
+                            <span class="postcard_bottom_writing_nickname">{bonoBobojjangjjang}</span>
+                            <span class="postcard_bottom_writing_content">{무언가를 찾고 있다면 길을 헷갈려선 안 돼. 한 번이라도 헷갈리면 더 이상
+                                찾을
+                                수 없게 되니까.
+                                그치만 헷갈려도 괜찮아. 다른 것이 찾아질 테니까.무언가를 찾고 있다면 길을 헷갈려선 안 돼. 한 번이라도 헷갈리면 더 이상 찾을
+                                수 없게 되니까.
+                                그치만 헷갈려도 괜찮아. 다른 것이 찾아질 테니까.무언가를 찾고 있다면 길을 헷갈려선 안 돼. 한 번이라도 헷갈리면 더 이상 찾을
+                                수 없게 되니까.
+                                그치만 헷갈려도 괜찮아. 다른 것이 찾아질 테니까.무언가를 찾고 있다면 길을 헷갈려선 안 돼. 한 번이라도 헷갈리면 더 이상 찾을
+                                수 없게 되니까.
+                                그치만 헷갈려도 괜찮아. 다른 것이 찾아질 테니까.}</span>
                         </div>
 
                         <div class="postcard_bottom_seecomment">댓글보기</div>
 
-                        <input placeholder="댓글달기" class="postcard_bottom_writecomment"></input>
+                        <input placeholder="댓글달기..." class="postcard_bottom_writecomment"></input>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <!--Figure3에만 등장하는 부분-->
-        <!--하단 footer(navbar) 부분-->
-    <footer class="footer">
-        <div class="footer_contents">
-            <div class="footer_contents_item">
-                <img src="img/icon_Home.svg" alt="" class="footer_contents_item_icon">
-            </div>
-            <div class="footer_contents_item">
-                <img src="img/icon_Explore.svg" alt="" class="footer_contents_item_icon">
-            </div>
-            <div class="footer_contents_item">
-                <img src="img/icon_Reels.svg" alt="" class="footer_contents_item_icon">
-            </div>
-            <div class="footer_contents_item">
-                <img src="img/icon_Add.svg" alt="" class="footer_contents_item_icon">
-            </div>
-            <div class="footer_contents_item">
-                <img src="img/icon_Send.svg" alt="" class="footer_contents_item_icon">
-            </div>
-            <div class="footer_contents_item">
-                <img src="img/icon_Profile.svg" alt="" class="footer_contents_item_icon">
-            </div>
-        </div>
-    </footer>
+                <div class="postcard">
 
-        <!--오른쪽 / Figure1에만 등장하는 부분-->
-        <div class="recommandbar">
-            추천영역
-        </div>
+                    <!-- 게시글 윗 부분 -->
+                    <div class="postcard_top">
+                        <div class="postcard_top_right">
+                            <div class="postcard_top_profile">
+                                <img src="img/img_Profile2.jpg">
+                            </div>
+                            <span class=" postcard_top_nickname"> {bonoBono}</span>
+                            <div class="postcard_top_timelog">1일</div>
+                        </div>
+                        <div class="postcard_top_right">
+                            <div class="postcard_top_seemore"><img src="img/icon_More.svg"></div>
+                        </div>
+                    </div>
+
+
+                    <!-- 게시글 사진 부분 -->
+                    <div class="postcard_content">
+                        <img src="img/img_Profile2.jpg" />
+                    </div>
+
+
+                    <!-- 게시글 아래 부분 -->
+                    <div class="postcard_bottom">
+
+                        <div class="postcard_bottom_icons">
+                            <div class="postcard_bottom_icons_left">
+                                <div class="postcard_bottom_icons_left_box">
+                                    <img src="img/icon_Heart.svg">
+                                </div>
+                                <div class="postcard_bottom_icons_left_box">
+                                    <img src="img/icon_Comment.svg">
+                                </div>
+                                <div class="postcard_bottom_icons_left_box">
+                                    <img src="img/icon_Send.svg">
+                                </div>
+                            </div>
+                            <div class="postcard_bottom_icons_right">
+                                <img src="img/icon_Bookmark.svg">
+                            </div>
+                        </div>
+
+                        <div class="postcard_bottom_favorite-count">좋아요 66개</div>
+
+                        <div class="postcard_bottom_writing">
+                            <span class="postcard_bottom_writing_nickname">{bonoBobojjangjjang}</span>
+                            <span class="postcard_bottom_writing_content">{무언가를 찾고 있다면 길을 헷갈려선 안 돼. 한 번이라도 헷갈리면 더 이상
+                                찾을
+                                수 없게 되니까.
+                                그치만 헷갈려도 괜찮아. 다른 것이 찾아질 테니까.무언가를 찾고 있다면 길을 헷갈려선 안 돼. 한 번이라도 헷갈리면 더 이상 찾을
+                                수 없게 되니까.
+                                그치만 헷갈려도 괜찮아. 다른 것이 찾아질 테니까.무언가를 찾고 있다면 길을 헷갈려선 안 돼. 한 번이라도 헷갈리면 더 이상 찾을
+                                수 없게 되니까.
+                                그치만 헷갈려도 괜찮아. 다른 것이 찾아질 테니까.무언가를 찾고 있다면 길을 헷갈려선 안 돼. 한 번이라도 헷갈리면 더 이상 찾을
+                                수 없게 되니까.
+                                그치만 헷갈려도 괜찮아. 다른 것이 찾아질 테니까.}</span>
+                        </div>
+
+                        <div class="postcard_bottom_seecomment">댓글보기</div>
+
+                        <input placeholder="댓글달기..." class="postcard_bottom_writecomment"></input>
+                    </div>
+                </div>
+                <div class="postcard">
+
+                    <!-- 게시글 윗 부분 -->
+                    <div class="postcard_top">
+                        <div class="postcard_top_right">
+                            <div class="postcard_top_profile">
+                                <img src="img/img_Profile2.jpg">
+                            </div>
+                            <span class=" postcard_top_nickname"> {bonoBono}</span>
+                            <div class="postcard_top_timelog">1일</div>
+                        </div>
+                        <div class="postcard_top_right">
+                            <div class="postcard_top_seemore"><img src="img/icon_More.svg"></div>
+                        </div>
+                    </div>
+
+
+                    <!-- 게시글 사진 부분 -->
+                    <div class="postcard_content">
+                        <img src="img/img_Profile2.jpg" />
+                    </div>
+
+
+                    <!-- 게시글 아래 부분 -->
+                    <div class="postcard_bottom">
+
+                        <div class="postcard_bottom_icons">
+                            <div class="postcard_bottom_icons_left">
+                                <div class="postcard_bottom_icons_left_box">
+                                    <img src="img/icon_Heart.svg">
+                                </div>
+                                <div class="postcard_bottom_icons_left_box">
+                                    <img src="img/icon_Comment.svg">
+                                </div>
+                                <div class="postcard_bottom_icons_left_box">
+                                    <img src="img/icon_Send.svg">
+                                </div>
+                            </div>
+                            <div class="postcard_bottom_icons_right">
+                                <img src="img/icon_Bookmark.svg">
+                            </div>
+                        </div>
+
+                        <div class="postcard_bottom_favorite-count">좋아요 66개</div>
+
+                        <div class="postcard_bottom_writing">
+                            <span class="postcard_bottom_writing_nickname">{bonoBobojjangjjang}</span>
+                            <span class="postcard_bottom_writing_content">{무언가를 찾고 있다면 길을 헷갈려선 안 돼. 한 번이라도 헷갈리면 더 이상
+                                찾을
+                                수 없게 되니까.
+                                그치만 헷갈려도 괜찮아. 다른 것이 찾아질 테니까.무언가를 찾고 있다면 길을 헷갈려선 안 돼. 한 번이라도 헷갈리면 더 이상 찾을
+                                수 없게 되니까.
+                                그치만 헷갈려도 괜찮아. 다른 것이 찾아질 테니까.무언가를 찾고 있다면 길을 헷갈려선 안 돼. 한 번이라도 헷갈리면 더 이상 찾을
+                                수 없게 되니까.
+                                그치만 헷갈려도 괜찮아. 다른 것이 찾아질 테니까.무언가를 찾고 있다면 길을 헷갈려선 안 돼. 한 번이라도 헷갈리면 더 이상 찾을
+                                수 없게 되니까.
+                                그치만 헷갈려도 괜찮아. 다른 것이 찾아질 테니까.}</span>
+                        </div>
+
+                        <div class="postcard_bottom_seecomment">댓글보기</div>
+
+                        <input placeholder="댓글달기..." class="postcard_bottom_writecomment"></input>
+                    </div>
+                </div>
+
+
+                <!--Figure3에만 등장하는 부분-->
+                <!--하단 footer(navbar) 부분-->
+                <footer class="footer">
+                    <div class="footer_contents">
+                        <div class="footer_contents_item">
+                            <img src="img/icon_Home.svg" alt="" class="footer_contents_item_icon">
+                        </div>
+                        <div class="footer_contents_item">
+                            <img src="img/icon_Explore.svg" alt="" class="footer_contents_item_icon">
+                        </div>
+                        <div class="footer_contents_item">
+                            <img src="img/icon_Reels.svg" alt="" class="footer_contents_item_icon">
+                        </div>
+                        <div class="footer_contents_item">
+                            <img src="img/icon_Add.svg" alt="" class="footer_contents_item_icon">
+                        </div>
+                        <div class="footer_contents_item">
+                            <img src="img/icon_Send.svg" alt="" class="footer_contents_item_icon">
+                        </div>
+                        <div class="footer_contents_item">
+                            <img src="img/icon_Profile.svg" alt="" class="footer_contents_item_icon">
+                        </div>
+                    </div>
+                </footer>
+
+                <!--오른쪽 / Figure1에만 등장하는 부분-->
+                <div class="recommandbar">
+                    추천영역
+                </div>
     </main>
 
 </body>
