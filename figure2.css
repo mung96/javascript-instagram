@@ -7,9 +7,6 @@
     }
 } */
 
-
-
-
     html {
         height: 100%;
         box-sizing: border-box;
@@ -152,7 +149,7 @@
 
     .postcard {
         margin-bottom: 10px;
-        width: 550px;
+        width: 470px;
         min-height: 693px;
         padding-bottom: 20px;
         border-bottom: 1px solid gray;
@@ -218,7 +215,7 @@
     flex-shrink: 0;
 }
 .postcard_slide>img {
-    min-width: 550px;
+    min-width: 470px;
     
 }
 /* 버튼*/
@@ -264,6 +261,7 @@
   right: 18px;
   top: 50%;
 }
+
 /* 게시글(postcard) 아래 부분 */
 
 
