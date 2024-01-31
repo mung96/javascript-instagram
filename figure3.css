@@ -1,5 +1,6 @@
-/* @media screen and (min-width:1264px) { */
-
+/* @media screen and (min-width:1264px) {
+@media screen and (min-width: 400px) and (max-width: 700px){ 
+*/
     html {
         height: 100%;
         box-sizing: border-box;
@@ -15,40 +16,40 @@
     }
     
     /* figure 3-1. header 부분 시작 */
-    @media screen and (min-width: 400px) and (max-width: 800px){
-        .header{
-            display: block;
-        }
-
-        .mid{
-            margin-top: 15px;
-        }
-
+    .navbar{
+        display: none;
     }
+    .mid{
+        margin-top: 15px;
+    }
+
     
     header{
         position: fixed;
-        top: 0;
-        width: 100%;
-        padding-top : 10px;
+        height: 80px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
+        top: 0;
+        width: 120%;
+        padding-top: 10px;
+        margin-left: 100px;
+        margin-right: 30%;
+        background-color: white;
     }
-
     .header_left_title{
         float: left;
-        position: fixed;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        margin-left: 50px;
     }
-
+    .header_logo{
+        width: 25%;
+        height: 5%;
+    }
     .header_right{
         float: right;
         display: flex;
-        margin-right: 50px;
+        margin-right: 100px;
     }
-
     .header_right_search_text{
         float: right;
         top: 50%;
@@ -59,7 +60,7 @@
         height: 5%;
         text-align: left;
         background-color: lightgrey;
-        border-radius: 5%;
+        border-radius: 5px;
     }
 
     /* navbar 부분 시작 */
@@ -213,11 +214,64 @@
 
     /* 게시글(postcard) 사진 부분 */
     .postcard_content {
+        position: relative;
         height: 468px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        overflow: hidden;
     }
+    .postcard_slide {
+        height: 468px;
+        position: relative;
+        display: flex;
+        flex-shrink: 0;
+    }
+    .postcard_slide>img {
+        min-width: 550px;
 
-    .postcard_content>img {
-        width: 100%;
+    }
+    /* 버튼*/
+    .btn-next,
+    .btn-next:active,
+    .btn-next:focus {
+    position: absolute;
+    padding: 2px 8px 7px 10px;
+    background-color: #FFDC80;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 100%;
+    }
+    .btn-prev,
+    .btn-prev:active,
+    .btn-prev:focus {
+    position: absolute;
+    padding: 2px 10px 7px 8px;
+    background-color: #FFDC80;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 100%;
+    text-align: center;
+    }
+    .btn-next:disabled,
+    .btn-prev:disabled {
+    background-color: lightgray;
+    }
+    .btn-next:hover,
+    .btn-prev:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #FFDC80;
+    transition: 0.7s ease-out;
+    }
+    .btn-prev {
+    left: 18px;
+    top: 50%;
+    }
+    .btn-next {
+    right: 18px;
+    top: 50%;
     }
 
 
@@ -237,52 +291,49 @@
     }
 
 
-    @media screen and (min-width: 400px) and (max-width: 800px){
+    /* @media screen and (min-width: 300px) and (max-width: 700px){ */
         /* .footer{
             display: block;
         } */
         /* figure 3-2. 하단 footer(navbar) 부분 시작 */
-        .footer{
-            display: flex;
-            align-items: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            padding-top : 10px;
-            min-width: 80px;
-            justify-content: space-between;
-        }
-
-        .footer_contents {
-            width: 100%;
-            border-width: 0;
-            color: transparent;
-            display: flex;
-            align-items: center;
-        }
-
-
-        .footer_contents_item {
-            height: 48px;
-            margin: 20px 20px 20px 20px;
-            align-items:center;
-        }
-
-        .navbar{
-            display: none;
-        }
-
-        .mid{
-            padding-bottom: 10px;            
-        }
-
+    .footer{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        width: 130%;
+        padding-top : 10px;
+        min-width: 80px;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: white;
+        border-top: 1px solid gray;
+    }
+    .footer_contents {
+        width: 100%;
+        border-width: 0;
+        color: transparent;
+        display: flex;
+        align-items: center;
     }
 
-    @media screen and (min-width:800px){
-        .footer{
-            display: None; /* 이거 왜 800px 넘어가도 안없어질까ㅠㅠㅠ*/
-        }
+
+    .footer_contents_item {
+        height: 48px;
+        margin: 20px 20px 20px 20px;
+        align-items:center;
     }
+
+    .navbar{
+        display: none;
+    }
+
+    .mid{
+        padding-bottom: 10px;            
+    }
+
+
+
 
     /*추천영역 시작 */
     .recommandbar {
@@ -290,4 +341,4 @@
         margin-top: 30px;
         width: 335px;
     }
-/* } */
+}
