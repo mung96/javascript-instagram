@@ -2,7 +2,7 @@
 let imgIndex = 0;
 let position = 0;
 let check=false;
-const IMG_WIDTH = 550;
+const IMG_WIDTH = 470;
 const $btnPrev = document.querySelector(".btn-prev");
 const $btnNext = document.querySelector(".btn-next");
 const $slideImgs = document.querySelector(".postcard_slide");
