@@ -9,7 +9,6 @@
 
 
 
-
 html {
     height: 100%;
     box-sizing: border-box;
@@ -88,7 +87,7 @@ body {
 main {
     display: flex;
     flex: 1;
-    flex-direction: row;
+    /* text-align: center; */
     justify-content: center;
 }
 
@@ -327,17 +326,71 @@ main {
 }
 
 
-
-
-
 /*추천영역 시작 */
 .recommandbar {
     margin-top: 30px;
     width: 335px;
 
+}
+
+.recommandbar_contents_title {
+    margin-top: 10px;
+    color: gray;
+}
+
+.recommandbar_contents_items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 12px;
+}
+
+.recommandbar_contents_item {
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommandbar_contents_item_left {
+    display: flex;
+}
+
+.recommandbar_contents_item_profile {
+    position: relative;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.recommandbar_contents_item_profile>img {
+    height: 100%;
+    margin: auto;
+}
+
+.recommandbar_contents_item_body {
+    margin-left: 10px;
+}
+
+.recommandbar_contents_item_follow {
+    color: blue;
+    font-size: 0.8rem;
+}
+
+.recommandbar_contents_item_detail {
+    color: gray;
+    font-size: 0.8rem;
+    height: 10px;
 
 }
 
+.recommandbar_bottom {
+    margin-top: 10px;
+    font-size: 0.6rem;
+    color: gray;
+}
+
+
 .footer {
     display: none;
-   }
+}
