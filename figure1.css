@@ -99,33 +99,33 @@ main {
 }
 
 /* 인스타 스토리(storyfeed) 부분 시작 */
-.storyfeed {
+.storyFeed {
     display: flex;
     gap: 12px;
     margin-top: 30px;
     height: 101px;
 }
 
-.storyfeed_item {
+.storyItem {
     display: flex;
     flex-direction: column;
     width: 66px;
 }
 
-.storyfeed_item_profile {
+.storyProfile {
     height: 66px;
     border-radius: 50%;
     overflow: hidden;
     border: 1px solid black;
 }
 
-.storyfeed_item_profile>img {
+.storyProfile>img {
     height: 66px;
     margin: auto;
     display: block;
 }
 
-.storyfeed_item_nickname {
+.storyNickName {
     text-align: center;
     margin-top: 2px;
 }
