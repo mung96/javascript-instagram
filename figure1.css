@@ -17,7 +17,7 @@ body {
 }
 
 /* navbar 부분 시작 */
-.navbar {
+#navbar {
     display: flex;
     flex-direction: column;
     width: 240px;
@@ -33,19 +33,19 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.navbar_contents {
+.navBarContents {
     height: 100%;
 }
 
 
-.navbar_contents_item {
+.navBarItem {
     height: 48px;
     margin: 10px 10px 10px 0px;
     display: flex;
     align-items: center;
 }
 
-.navbar_contents_item_text {
+.navBarText {
     margin-left: 20px;
 }
 
@@ -109,7 +109,7 @@ main {
 }
 
 /* 스토리가 올라왔을 때 활성화할 css / 나중에 무지개로 바꿔야함.*/
-.updateStory >div{
+.updateStory>div {
     border: 3px solid red;
 }
 
