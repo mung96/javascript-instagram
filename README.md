@@ -36,3 +36,8 @@ header class="header">
 -리액트의 컴포넌트를 따라하려고 노력
 -ui와 feat을 분리
 -최종 app.js에서 하면 좋을듯?
+
+radial-gradient 찾아보기
+
+
+  //클로저를 이용하면 좋아요상태변화를 추적할 수 있지 않을까?

@@ -1,5 +1,5 @@
 (() => {
-    const storyFeed = document.querySelector('.storyFeed')
+    const storyFeed = document.querySelector('#storyFeed')
 
     let users = [
         { id: 1, nickName: "보노보노", profileImg: "img/user/profile/bonobonoProfile.jpg" },

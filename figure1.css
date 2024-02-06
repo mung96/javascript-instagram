@@ -1,14 +1,3 @@
-/* @media screen and (min-width:1920px) {
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        width: 335px;
-        border-right: 1px solid gray;
-    }
-} */
-
-
-
 html {
     height: 100%;
     box-sizing: border-box;
@@ -99,7 +88,7 @@ main {
 }
 
 /* 인스타 스토리(storyfeed) 부분 시작 */
-.storyFeed {
+#storyFeed {
     display: flex;
     gap: 12px;
     margin-top: 30px;
@@ -117,6 +106,11 @@ main {
     border-radius: 50%;
     overflow: hidden;
     border: 1px solid black;
+}
+
+/* 스토리가 올라왔을 때 활성화할 css / 나중에 무지개로 바꿔야함.*/
+.updateStory >div{
+    border: 3px solid red;
 }
 
 .storyProfile>img {
