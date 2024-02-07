@@ -71,7 +71,7 @@ body {
 main {
     display: flex;
     flex: 1;
-    / text-align: center; 
+    text-align: center; 
     justify-content: center;
 }
 
@@ -182,7 +182,7 @@ main {
 }
 
 /* 게시글(postcard) 사진 부분 */
-.postcard_content {
+.postCardContent {
     position: relative;
     height: 468px;
     border: 1px solid gray;
@@ -190,22 +190,22 @@ main {
     overflow: hidden;
 }
 
-.postcard_slide {
+.postCardSlide {
     height: 468px;
     position: relative;
     display: flex;
     flex-shrink: 0;
 }
 
-.postcard_slide>img {
+.postCardSlide>img {
     min-width: 550px;
 
 }
 
 /* 버튼*/
-.btn-next,
-.btn-next:active,
-.btn-next:focus {
+.btnNext,
+.btnNext:active,
+.btnNext:focus {
     position: absolute;
     padding: 2px 8px 7px 10px;
     background-color: #FFDC80;
@@ -215,9 +215,9 @@ main {
     border-radius: 100%;
 }
 
-.btn-prev,
-.btn-prev:active,
-.btn-prev:focus {
+.btnPrev,
+.btnPrev:active,
+.btnPrev:focus {
     position: absolute;
     padding: 2px 10px 7px 8px;
     background-color: #FFDC80;
@@ -228,25 +228,25 @@ main {
     text-align: center;
 }
 
-.btn-next:disabled,
-.btn-prev:disabled {
+.btnNext:disabled,
+.btnPrev:disabled {
     background-color: lightgray;
 }
 
-.btn-next:hover,
-.btn-prev:hover {
+.btnNext:hover,
+.btnPrev:hover {
     cursor: pointer;
     background-color: white;
     color: #FFDC80;
     transition: 0.7s ease-out;
 }
 
-.btn-prev {
+.btnPrev {
     left: 18px;
     top: 50%;
 }
 
-.btn-next {
+.btnNext {
     right: 18px;
     top: 50%;
 }

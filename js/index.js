@@ -3,9 +3,9 @@ let imgIndex = 0;
 let position = 0;
 let check=false;
 const IMG_WIDTH = 470;
-const $btnPrev = document.querySelector(".btn-prev");
-const $btnNext = document.querySelector(".btn-next");
-const $slideImgs = document.querySelector(".postcard_slide");
+const $btnPrev = document.querySelector(".btnPrev");
+const $btnNext = document.querySelector(".btnNext");
+const $slideImgs = document.querySelector(".postCardSlide");
 const heart=document.getElementById("heart");
 
 
@@ -43,15 +43,13 @@ function init () {
 };
 function clickLike(){
   if(!check){
-    heart.src="img/icon_Heart.svg";
+    heart.src="img/icon/heart.svg";
     check=true;
   }
   else{
-    heart.src="img/icon_RedHeart.png";
+    heart.src="img/icon/redHeart.svg";
     check=false;
   }
-
-
 }
 
 init();
