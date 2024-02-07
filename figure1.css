@@ -253,18 +253,18 @@ main {
 
 /* 게시글(postcard) 아래 부분 */
 
-.postcard_bottom_icons {
+.postCardBottomIcons {
     display: flex;
     justify-content: space-between;
 }
 
-.postcard_bottom_icons_left {
+.postCardBottomIconsLeft {
     display: flex;
     justify-content: space-between;
 }
 
-.postcard_bottom_icons_left_box,
-.postcard_bottom_icons_right {
+.postCardBottomIconBox,
+.postCardBottomIconsRight {
     position: relative;
     right: 8px;
     width: 40px;
@@ -273,39 +273,38 @@ main {
     text-align: center;
 }
 
-.postcard_bottom_icons_right {
+.postCardBottomIconsRight {
     left: 8px;
 }
 
-.postcard_bottom_icons_left_box>img,
-.postcard_bottom_icons_right>img {
+.postCardBottomIconBox>img,
+.postCardBottomIconsRight>img {
     width: 28px;
     height: 28px;
 }
 
-.postcard_bottom_favorite-count {
+.postCardBottomFavoriteCount {
     line-height: 17px;
     font-weight: bold;
 }
 
-.postcard_bottom_writing {
+.postCardBottomTexts {
     display: inline-block;
     margin-top: 5px;
     height: 36px;
-
 }
 
-.postcard_bottom_writing_nickname {
+.postCardBottomNickName {
     display: inline-block;
     font-weight: bold;
 }
 
-.postcard_bottom_seecomment {
+.postCardBottomSeeComment {
     margin-top: 8px;
     color: gray;
 }
 
-.postcard_bottom_writecomment {
+.postCardBottomWriteComment {
     margin-top: 8px;
     border: none;
 }
