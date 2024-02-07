@@ -41,3 +41,7 @@ radial-gradient 찾아보기
 
 
   //클로저를 이용하면 좋아요상태변화를 추적할 수 있지 않을까?
+
+
+  //공부할 내용
+  //<script src="js/components/postCard/postCardUi.js" type="module"></script>
