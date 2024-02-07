@@ -1,14 +1,3 @@
-/* @media screen and (min-width:1920px) {
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        width: 335px;
-        border-right: 1px solid gray;
-    }
-} */
-
-
-
 html {
     height: 100%;
     box-sizing: border-box;
@@ -28,7 +17,8 @@ body {
 }
 
 /* navbar 부분 시작 */
-.navbar {
+
+#navbar {
     display: flex;
     flex-direction: column;
     width: 240px;
@@ -44,28 +34,25 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.navbar_contents {
+.navBarContents {
     height: 100%;
 }
 
-
-.navbar_contents_item {
+.navBarItem {
     height: 48px;
     margin: 10px 10px 10px 0px;
     display: flex;
     align-items: center;
 }
 
-.navbar_contents_item_text {
+.navBarText {
     margin-left: 20px;
 }
-
 
 .navbar_bottom {
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-
 
 }
 
@@ -80,14 +67,11 @@ body {
     height: 48px;
 }
 
-
-
-
-/* main 부분 시작 */
+ /* main 부분 시작  */
 main {
     display: flex;
     flex: 1;
-    /* text-align: center; */
+    text-align: center; 
     justify-content: center;
 }
 
@@ -99,47 +83,52 @@ main {
 }
 
 /* 인스타 스토리(storyfeed) 부분 시작 */
-.storyfeed {
+
+#storyFeed {
     display: flex;
     gap: 12px;
     margin-top: 30px;
     height: 101px;
 }
 
-.storyfeed_item {
+.storyItem {
     display: flex;
     flex-direction: column;
     width: 66px;
 }
 
-.storyfeed_item_profile {
+.storyProfile {
     height: 66px;
     border-radius: 50%;
     overflow: hidden;
     border: 1px solid black;
 }
 
-.storyfeed_item_profile>img {
+/* 스토리가 올라왔을 때 활성화할 css / 나중에 무지개로 바꿔야함.*/
+.updateStory>div {
+    border: 3px solid red;
+}
+
+.storyProfile>img {
     height: 66px;
     margin: auto;
     display: block;
 }
 
-.storyfeed_item_nickname {
+.storyNickName {
     text-align: center;
     margin-top: 2px;
 }
 
-
-
 /* 인스타 게시글(postcard) 부분 시작 */
-.postcards {
+
+#postCards {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.postcard {
+.postCard {
     margin-bottom: 10px;
     width: 470px;
     min-height: 693px;
@@ -148,10 +137,8 @@ main {
 
 }
 
-
-
 /* 게시글(postcard) 윗 부분 */
-.postcard_top {
+.postCardTop {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
@@ -159,12 +146,22 @@ main {
     line-height: 1rem;
 }
 
-.postcard_top_right {
+.postCardTopLeft > span {
+    height: 1rem;
+    margin-left: 10px;
+}
+.postCardTopLeft {
     display: flex;
     align-items: center;
 }
 
-.postcard_top_profile {
+
+.postCardTopRight {
+    display: flex;
+    align-items: center;
+}
+
+.postCardProfile {
     position: relative;
     width: 32px;
     height: 32px;
@@ -173,27 +170,19 @@ main {
     border: 1px solid black;
 }
 
-.postcard_top_profile>img {
+.postCardProfile>img {
     height: 32px;
     margin: auto;
 }
 
-
-.postcard_top_nickname {
-    height: 1rem;
-    margin-left: 10px;
-}
-
-.postcard_top_timelog {
+.postCardTimeLog {
     color: gray;
     font-size: 0.8rem;
     margin-left: 5px;
 }
 
-
-
 /* 게시글(postcard) 사진 부분 */
-.postcard_content {
+.postCardContent {
     position: relative;
     height: 468px;
     border: 1px solid gray;
@@ -201,22 +190,22 @@ main {
     overflow: hidden;
 }
 
-.postcard_slide {
+.postCardSlide {
     height: 468px;
     position: relative;
     display: flex;
     flex-shrink: 0;
 }
 
-.postcard_slide>img {
+.postCardSlide>img {
     min-width: 550px;
 
 }
 
 /* 버튼*/
-.btn-next,
-.btn-next:active,
-.btn-next:focus {
+.btnNext,
+.btnNext:active,
+.btnNext:focus {
     position: absolute;
     padding: 2px 8px 7px 10px;
     background-color: #FFDC80;
@@ -226,9 +215,9 @@ main {
     border-radius: 100%;
 }
 
-.btn-prev,
-.btn-prev:active,
-.btn-prev:focus {
+.btnPrev,
+.btnPrev:active,
+.btnPrev:focus {
     position: absolute;
     padding: 2px 10px 7px 8px;
     background-color: #FFDC80;
@@ -239,45 +228,43 @@ main {
     text-align: center;
 }
 
-.btn-next:disabled,
-.btn-prev:disabled {
+.btnNext:disabled,
+.btnPrev:disabled {
     background-color: lightgray;
 }
 
-.btn-next:hover,
-.btn-prev:hover {
+.btnNext:hover,
+.btnPrev:hover {
     cursor: pointer;
     background-color: white;
     color: #FFDC80;
     transition: 0.7s ease-out;
 }
 
-.btn-prev {
+.btnPrev {
     left: 18px;
     top: 50%;
 }
 
-.btn-next {
+.btnNext {
     right: 18px;
     top: 50%;
 }
 
 /* 게시글(postcard) 아래 부분 */
 
-
-.postcard_bottom_icons {
+.postCardBottomIcons {
     display: flex;
     justify-content: space-between;
 }
 
-.postcard_bottom_icons_left {
+.postCardBottomIconsLeft {
     display: flex;
     justify-content: space-between;
 }
 
-
-.postcard_bottom_icons_left_box,
-.postcard_bottom_icons_right {
+.postCardBottomIconBox,
+.postCardBottomIconsRight {
     position: relative;
     right: 8px;
     width: 40px;
@@ -286,45 +273,41 @@ main {
     text-align: center;
 }
 
-.postcard_bottom_icons_right {
+.postCardBottomIconsRight {
     left: 8px;
 }
 
-
-.postcard_bottom_icons_left_box>img,
-.postcard_bottom_icons_right>img {
+.postCardBottomIconBox>img,
+.postCardBottomIconsRight>img {
     width: 28px;
     height: 28px;
 }
 
-.postcard_bottom_favorite-count {
+.postCardBottomFavoriteCount {
     line-height: 17px;
     font-weight: bold;
 }
 
-.postcard_bottom_writing {
+.postCardBottomTexts {
     display: inline-block;
     margin-top: 5px;
     height: 36px;
-
 }
 
-.postcard_bottom_writing_nickname {
+.postCardBottomNickName {
     display: inline-block;
     font-weight: bold;
 }
 
-
-.postcard_bottom_seecomment {
+.postCardBottomSeeComment {
     margin-top: 8px;
     color: gray;
 }
 
-.postcard_bottom_writecomment {
+.postCardBottomWriteComment {
     margin-top: 8px;
     border: none;
 }
-
 
 /*추천영역 시작 */
 .recommandbar {
@@ -389,7 +372,6 @@ main {
     font-size: 0.6rem;
     color: gray;
 }
-
 
 .footer {
     display: none;
