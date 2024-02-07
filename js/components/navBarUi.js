@@ -2,13 +2,13 @@
     const navBar = document.querySelector('.navBarContents')
     const navItems = [
         { id: 1, icon: "img/icon/home.svg", text: "홈" },
-        { id: 1, icon: "img/icon/search.svg", text: "검색" },
-        { id: 1, icon: "img/icon/explore.svg", text: "탐색 탬" },
-        { id: 1, icon: "img/icon/reels.svg", text: "릴스" },
-        { id: 1, icon: "img/icon/send.svg", text: "메시지" },
-        { id: 1, icon: "img/icon/heart.svg", text: "알림" },
-        { id: 1, icon: "img/icon/add.svg", text: "만들기" },
-        { id: 1, icon: "img/icon/profile.svg", text: "프로필" }
+        { id: 2, icon: "img/icon/search.svg", text: "검색" },
+        { id: 3, icon: "img/icon/explore.svg", text: "탐색 탬" },
+        { id: 4, icon: "img/icon/reels.svg", text: "릴스" },
+        { id: 5, icon: "img/icon/send.svg", text: "메시지" },
+        { id: 6, icon: "img/icon/heart.svg", text: "알림" },
+        { id: 7, icon: "img/icon/add.svg", text: "만들기" },
+        { id: 8, icon: "img/icon/profile.svg", text: "프로필" }
     ]
 
     const navBarUi = (navItem) => {

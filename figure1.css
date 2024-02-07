@@ -67,11 +67,11 @@ body {
     height: 48px;
 }
 
- /* main 부분 시작  */
+/* main 부분 시작  */
 main {
     display: flex;
     flex: 1;
-    text-align: center; 
+    text-align: center;
     justify-content: center;
 }
 
@@ -146,10 +146,11 @@ main {
     line-height: 1rem;
 }
 
-.postCardTopLeft > span {
+.postCardTopLeft>span {
     height: 1rem;
     margin-left: 10px;
 }
+
 .postCardTopLeft {
     display: flex;
     align-items: center;
@@ -199,7 +200,6 @@ main {
 
 .postCardSlide>img {
     min-width: 550px;
-
 }
 
 /* 버튼*/
@@ -249,6 +249,10 @@ main {
 .btnNext {
     right: 18px;
     top: 50%;
+}
+
+.btnHide {
+    visibility: hidden;
 }
 
 /* 게시글(postcard) 아래 부분 */

@@ -1,4 +1,4 @@
-export const makeContent = () =>{
+export const makeContent = () => {
     const content = document.createElement('div');
     content.classList.add("postCardContent");
 
@@ -26,5 +26,5 @@ export const makeContent = () =>{
     btnPrev.textContent = "◀";
     content.appendChild(btnNext);
     content.appendChild(btnPrev);
-    return content; 
+    return content;
 }
