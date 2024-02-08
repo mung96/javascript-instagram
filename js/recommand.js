@@ -2,15 +2,15 @@
     const contents = document.querySelector('.recommandbar_contents_items');
     const userProfile = document.querySelector('.recommandbar_user');
     const USER_BTN_TEXT = "전환";
-    const USER_BODY_TEXT = "보노보노";
+    const USER_BODY_TEXT = "현명";
     const FRIEND_BTN_TEXT = "팔로우";
     const FRIEND_BODY_TEXT = "회원님을 위한추천";
 
-    let user = { id: 0, nickname: "bonobono", src: "img/img_Profile2.jpg", btnText: USER_BTN_TEXT, bodyText: USER_BODY_TEXT }
+    let user = { id: 0, nickname: "hyeonmyeong", src: "img/icon/profile.svg", btnText: USER_BTN_TEXT, bodyText: USER_BODY_TEXT }
     let friends = [
-        { id: 1, nickname: "friend1", src: "img/img_Profile3.jpg", btnText: FRIEND_BTN_TEXT, bodyText: FRIEND_BODY_TEXT },
-        { id: 2, nickname: "friend2", src: "img/img_Profile2.jpg", btnText: FRIEND_BTN_TEXT, bodyText: FRIEND_BODY_TEXT },
-        { id: 3, nickname: "friend3", src: "img/img_Profile3.jpg", btnText: FRIEND_BTN_TEXT, bodyText: FRIEND_BODY_TEXT }
+        { id: 1, nickname: "friend1", src: "img/icon/profile.svg", btnText: FRIEND_BTN_TEXT, bodyText: FRIEND_BODY_TEXT },
+        { id: 2, nickname: "friend2", src: "img/icon/profile.svg", btnText: FRIEND_BTN_TEXT, bodyText: FRIEND_BODY_TEXT },
+        { id: 3, nickname: "friend3", src: "img/icon/profile.svg", btnText: FRIEND_BTN_TEXT, bodyText: FRIEND_BODY_TEXT }
     ]
 
     function makeItemProfile(person) {
