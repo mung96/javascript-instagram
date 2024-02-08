@@ -53,7 +53,7 @@ function postCardLike(user){
             heartIcon.src = isLike? likeIcon:unLikeIcon;
             count = isLike? ++count:--count;
             console.log(count);
-            heartCount.textContent= (count===0)? "아직 좋아요가 없습니다.":`좋아요 ${count}개`;
+            heartCount.textContent= (count===0)? "좋아요가 없습니다.":`좋아요 ${count}개`;
             isLike = !isLike;
         }
     }
