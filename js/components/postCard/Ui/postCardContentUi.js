@@ -1,4 +1,6 @@
-export const makeContent = () => {
+
+
+export const makeContent = (user) => {
     const content = document.createElement('div');
     content.classList.add("postCardContent");
 
@@ -6,17 +8,13 @@ export const makeContent = () => {
     slide.classList.add("postCardSlide");
     content.appendChild(slide);
 
-    const slideImg1 = document.createElement('img');
-    slideImg1.src = "img/user/post/bonobonoPost1.jpeg";
-    const slideImg2 = document.createElement('img');
-    slideImg2.src = "img/user/post/bonobonoPost2.jpeg"
-    const slideImg3 = document.createElement('img');
-    slideImg3.src = "img/user/post/bonobonoPost3.jpeg"
-
-    slide.appendChild(slideImg1);
-    slide.appendChild(slideImg2);
-    slide.appendChild(slideImg3);
-
+    user.posts.forEach(function(post){
+            const slideImg = document.createElement('img');
+            slideImg.src = post;
+            slide.appendChild(slideImg);
+        }
+    )
+    
     //버튼부분
     const btnNext = document.createElement('button');
     btnNext.classList.add("btnNext");

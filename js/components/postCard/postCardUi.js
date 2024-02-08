@@ -10,7 +10,7 @@ export const postCardUi = (user) => {
     postCard.classList.add("postCard");
 
     postCard.appendChild(makeTop(user));
-    postCard.appendChild(makeContent());
+    postCard.appendChild(makeContent(user));
     postCard.appendChild(makeBottom(user));
 
     postCards.appendChild(postCard);

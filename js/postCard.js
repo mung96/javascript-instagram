@@ -1,9 +1,9 @@
 import { postCardUi } from "./components/postCard/postCardUi.js";
 
 let users = [
-    { id: 1, nickName: "보노보노", profileImg: "img/user/profile/bonobonoProfile.jpg" },
-    { id: 2, nickName: "포로리", profileImg: "img/user/profile/pororiProfile.webp" },
-    { id: 3, nickName: "너부리", profileImg: "img/user/profile/raccoonProfile.jpeg" }
+    { id: 1, nickName: "보노보노", profileImg: "img/user/profile/bonobonoProfile.jpg", posts:["img/user/post/bonobonoPost1.jpeg","img/user/post/bonobonoPost2.jpeg","img/user/post/bonobonoPost3.jpeg"] },
+    { id: 2, nickName: "포로리", profileImg: "img/user/profile/pororiProfile.webp",posts:["img/user/post/pororiPost1.jpeg","img/user/post/pororiPost2.jpeg","img/user/post/pororiPost3.jpeg"] },
+    { id: 3, nickName: "너부리", profileImg: "img/user/profile/raccoonProfile.jpeg",posts:["img/user/post/raccoonPost1.jpeg","img/user/post/raccoonPost2.jpeg","img/user/post/raccoonPost3.jpeg"] }
 ]
 
 function postCardSlide(user) {
