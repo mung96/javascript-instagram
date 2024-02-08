@@ -6,10 +6,11 @@ let users = [
     { id: 3, nickName: "너부리", profileImg: "img/user/profile/raccoonProfile.jpeg" }
 ]
 
-function postCardSlide() {
-    const btnPrev = document.querySelector(".btnPrev");
-    const btnNext = document.querySelector(".btnNext");
-    const slideImgs = document.querySelector(".postCardSlide");
+function postCardSlide(user) {
+    const userPost = document.querySelector(`#postCard${user.id}`);
+    const btnPrev = userPost.querySelector(".btnPrev");
+    const btnNext = userPost.querySelector(".btnNext");
+    const slideImgs = userPost.querySelector(".postCardSlide");
 
     btnPrev.style.display = "none";
     let imgIndex = 0;
@@ -36,11 +37,12 @@ function postCardSlide() {
     btnNext.addEventListener("click", handleBtnClick("next"));
 };
 
-function postCardLike(){
-    let heartIconBox = document.querySelector(".heartAction");
+function postCardLike(user){
+    const userPost = document.querySelector(`#postCard${user.id}`);
+    let heartCount = userPost.querySelector(".favorite");
+    let heartIconBox = userPost.querySelector(".heartAction");
     let heartIcon = heartIconBox.querySelector("img"); //진짜 이거밖에 방법이 없는건가?
-    let heartCount = document.querySelector(".favorite");
-
+    
     const unLikeIcon = "img/icon/heart.svg";
     const likeIcon = "img/icon/heartLike.svg";
     
@@ -61,8 +63,8 @@ function postCardLike(){
 
 const postCard = (user) => {
     postCardUi(user);
-    postCardSlide();
-    postCardLike();
+    postCardSlide(user);
+    postCardLike(user);
 }
 
 users.map(user => postCard(user));
