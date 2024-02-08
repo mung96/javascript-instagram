@@ -5,17 +5,16 @@ let users = [
     { id: 2, nickName: "포로리", profileImg: "img/user/profile/pororiProfile.webp" },
     { id: 3, nickName: "너부리", profileImg: "img/user/profile/raccoonProfile.jpeg" }
 ]
-// const postCardContent = document.querySelector("#postCards");
 
-function postCardFeat() {
+function postCardSlide() {
     const btnPrev = document.querySelector(".btnPrev");
     const btnNext = document.querySelector(".btnNext");
     const slideImgs = document.querySelector(".postCardSlide");
+
     btnPrev.style.display = "none";
     let imgIndex = 0;
     let position = 0;
     const IMG_WIDTH = 550;
-    console.log(1);
 
     function handleBtnClick(btn) {
         return function () {
@@ -33,20 +32,32 @@ function postCardFeat() {
             slideImgs.style.transition = "transform .5s ease-out";
         }
     };
-
-    function slide() {
-        btnPrev.addEventListener("click", handleBtnClick("prev"));
-        btnNext.addEventListener("click", handleBtnClick("next"));
-    }
-    slide()
+    btnPrev.addEventListener("click", handleBtnClick("prev"));
+    btnNext.addEventListener("click", handleBtnClick("next"));
 };
 
+function postCardLike(){
+    let heartIconBox = document.querySelector(".heartAction");
+    let heartIcon = heartIconBox.querySelector("img");
+    const unLikeIcon = "img/icon/heart.svg";
+    const likeIcon = "img/icon/heartLike.svg";
+    
+    function handleHeartClick(){
+        let isLike = false;    
+        return function(){
+            heartIcon.src = isLike? unLikeIcon:likeIcon;
+            isLike = !isLike;
+        }
+    }
+    heartIcon.addEventListener("click",handleHeartClick());
+};
 
-const postCard = () => {
-    users.map(user => postCardUi(user));
-    postCardFeat();
+const postCard = (user) => {
+    postCardUi(user);
+    postCardSlide();
+    postCardLike();
 }
 
-postCard();
+users.map(user => postCard(user));
 
 

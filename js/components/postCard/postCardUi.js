@@ -6,6 +6,7 @@ const postCards = document.querySelector('#postCards')
 
 export const postCardUi = (user) => {
     const postCard = document.createElement('div');
+    postCard.id = `postCard${user.id}`;
     postCard.classList.add("postCard");
 
     postCard.appendChild(makeTop(user));
