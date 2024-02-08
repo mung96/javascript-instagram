@@ -78,7 +78,7 @@ export const makeBottom = (user) => {
     //좋아요 갯수
     const favoriteCount = document.createElement('span');
     favoriteCount.classList.add("favorite");
-    favoriteCount.textContent="좋아요 66개";
+    favoriteCount.textContent="아직 좋아요가 없습니다.";
     bottom.appendChild(favoriteCount);
 
     //닉네임, 내용

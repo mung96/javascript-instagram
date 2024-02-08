@@ -38,19 +38,26 @@ function postCardSlide() {
 
 function postCardLike(){
     let heartIconBox = document.querySelector(".heartAction");
-    let heartIcon = heartIconBox.querySelector("img");
+    let heartIcon = heartIconBox.querySelector("img"); //진짜 이거밖에 방법이 없는건가?
+    let heartCount = document.querySelector(".favorite");
+
     const unLikeIcon = "img/icon/heart.svg";
     const likeIcon = "img/icon/heartLike.svg";
     
     function handleHeartClick(){
-        let isLike = false;    
+        let isLike = true;   
+        let count =0; 
         return function(){
-            heartIcon.src = isLike? unLikeIcon:likeIcon;
+            heartIcon.src = isLike? likeIcon:unLikeIcon;
+            count = isLike? ++count:--count;
+            console.log(count);
+            heartCount.textContent= (count===0)? "아직 좋아요가 없습니다.":`좋아요 ${count}개`;
             isLike = !isLike;
         }
     }
     heartIcon.addEventListener("click",handleHeartClick());
 };
+
 
 const postCard = (user) => {
     postCardUi(user);
