@@ -19,11 +19,15 @@ body {
 /* navbar 부분 시작 */
 
 #navbar {
+    position: fixed;
     display: flex;
     flex-direction: column;
+    padding-left: 40px;
+    align-items: left;
+    
     width: 240px;
+    height: 100vh;
     border-right: 1px solid gray;
-    align-items: center;
 }
 
 .navbar_top {
