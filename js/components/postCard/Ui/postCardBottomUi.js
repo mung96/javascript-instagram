@@ -1,15 +1,27 @@
+const leftIcons = [
+    {id:1,name:"heart",iconImg:"img/icon/heart.svg"},
+    {id:2,name:"comment",iconImg:"img/icon/comment.svg"},
+    {id:3,name:"send",iconImg:"img/icon/send.svg"}
+];
+
+const rightIcons = [
+    {id:1,name:"bookmark",iconImg:"img/icon/bookmark.svg"}
+];
+
+
+
 function bottomIconsLeft(){
     const bottomIconsLeft = document.createElement('div');
     bottomIconsLeft.classList.add("postCardBottomIconsLeft");
     
-    for(let i=0;i<3;i++){
+    leftIcons.forEach((icon)=>{
         const IconBox = document.createElement('div');
-        IconBox.classList.add("postCardBottomIconBox");
+        IconBox.classList.add("postCardBottomIconBox",`${icon.name}Action`);
         const IconImg = document.createElement('img');
-        IconImg.src = "img/icon/heart.svg";
+        IconImg.src = icon.iconImg;
         IconBox.appendChild(IconImg);
         bottomIconsLeft.appendChild(IconBox);
-    }
+    })
     return bottomIconsLeft;
 }
 
@@ -17,13 +29,15 @@ function bottomIconsRight(){
     const bottomIconsRight = document.createElement('div');
     bottomIconsRight.classList.add("postCardBottomIconsRight");
 
-    const IconBox = document.createElement('div');
-    IconBox.classList.add("postCardBottomIconBox");
-    const IconImg = document.createElement('img');
-    IconImg.src = "img/icon/bookmark.svg";
-    IconBox.appendChild(IconImg);
-    bottomIconsRight.appendChild(IconBox);
-    
+    rightIcons.forEach((icon)=>{
+        const IconBox = document.createElement('div');
+        IconBox.classList.add("postCardBottomIconBox",`${icon.name}Action`);
+        const IconImg = document.createElement('img');
+        IconImg.src = icon.iconImg;
+        IconBox.appendChild(IconImg);
+        bottomIconsRight.appendChild(IconBox);
+    })
+
     return bottomIconsRight;
 }
 
@@ -53,7 +67,6 @@ function makeBottomContents(user){
     bottomTexts.appendChild(nickName);
     bottomTexts.appendChild(body);
 
-    //
     return bottomTexts
 }
 
@@ -64,7 +77,8 @@ export const makeBottom = (user) => {
     
     //좋아요 갯수
     const favoriteCount = document.createElement('span');
-    favoriteCount.textContent="좋아요 66개";
+    favoriteCount.classList.add("favorite");
+    favoriteCount.textContent="아직 좋아요가 없습니다.";
     bottom.appendChild(favoriteCount);
 
     //닉네임, 내용
