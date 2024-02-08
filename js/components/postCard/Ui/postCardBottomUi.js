@@ -78,7 +78,7 @@ export const makeBottom = (user) => {
     //좋아요 갯수
     const favoriteCount = document.createElement('span');
     favoriteCount.classList.add("favorite");
-    favoriteCount.textContent="아직 좋아요가 없습니다.";
+    favoriteCount.textContent="좋아요가 없습니다.";
     bottom.appendChild(favoriteCount);
 
     //닉네임, 내용
@@ -93,7 +93,7 @@ export const makeBottom = (user) => {
     //댓글달기
     const writeComment = document.createElement('input');
     writeComment.placeholder="댓글달기...";
-    seeComment.classList.add("postCardBottomWriteComment");
+    writeComment.classList.add("postCardBottomWriteComment");
     bottom.appendChild(writeComment);
     return bottom;
 }
